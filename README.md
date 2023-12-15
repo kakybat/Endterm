@@ -1,8 +1,8 @@
-Simple Blog Backend Application Documentation
-Overview
+# Simple Blog Backend Application Documentation
+**Overview**
 
 This is a simple blog backend application built using the Spring framework. It provides basic CRUD operations for managing blog posts and includes basic authentication using Spring Security. The application uses an in-memory H2 database for data storage.
-Project Structure
+**Project Structure**
 
     Post.java: Entity class representing a blog post with fields such as id, title, text, and creationDate.
     PostRepository.java: Interface extending JpaRepository for performing CRUD operations on posts.
@@ -11,7 +11,7 @@ Project Structure
     PostController.java: REST controller exposing endpoints for managing blog posts.
     SecurityConfig.java: Security configuration class extending SecurityConfigurerAdapter to configure basic authentication and authorization.
 
-Dependencies
+**Dependencies**
 
 The project is a Gradle project and includes the following dependencies:
 
@@ -21,7 +21,7 @@ The project is a Gradle project and includes the following dependencies:
     com.h2database:h2: H2 database for in-memory data storage.
     org.springframework.boot:spring-boot-starter-test: Spring Boot starter for testing.
 
-Configuration
+**Configuration**
 
     Database Configuration: The application is configured to use an H2 in-memory database. Database configuration is specified in application.properties.
 
@@ -35,14 +35,14 @@ Configuration
 
     Security Configuration: Basic security configuration is provided in SecurityConfig.java. The configuration allows access to /api/posts only for authenticated users.
 
-Endpoints
+**Endpoints**
 
     GET /api/posts: Retrieve all blog posts.
     GET /api/posts/{id}: Retrieve a specific blog post by ID.
     POST /api/posts: Create a new blog post.
     DELETE /api/posts/{id}: Delete a blog post by ID.
 
-Authentication
+**Authentication**
 
     Username: user
     Password: password
