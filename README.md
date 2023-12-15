@@ -1,7 +1,7 @@
 # Simple Blog Backend Application Documentation
 **Overview**
 
-This is a simple blog backend application built using the Spring framework. It provides basic CRUD operations for managing blog posts and includes basic authentication using Spring Security. The application uses an in-memory H2 database for data storage.
+This is a simple blog backend application built using the **Spring framework**. It provides basic CRUD operations for managing blog posts and includes basic **authentication** using **Spring Security**. The application uses an in-memory **H2 database** for data storage.
 **Project Structure**
 
     Post.java: Entity class representing a blog post with fields such as id, title, text, and creationDate.
@@ -13,7 +13,7 @@ This is a simple blog backend application built using the Spring framework. It p
 
 **Dependencies**
 
-The project is a Gradle project and includes the following dependencies:
+The project is a **Gradle project** and includes the following dependencies:
 
     spring-boot-starter-data-jpa: Spring Boot starter for JPA data access.
     spring-boot-starter-security: Spring Boot starter for security.
@@ -23,7 +23,7 @@ The project is a Gradle project and includes the following dependencies:
 
 **Configuration**
 
-    Database Configuration: The application is configured to use an H2 in-memory database. Database configuration is specified in application.properties.
+    Database Configuration: The application is configured to use an **H2 in-memory database**. Database configuration is specified in application.properties.
 
     properties
 
